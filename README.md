@@ -45,6 +45,13 @@ The processed data ends up in Azure Blob Storage. I established the storage acco
 
 The storage container for processed sensor logs was set up in the storage account through default configurations.  
 
+## Configuring Azure Stream Analytics
+To establish an Azure Stream Analytics job users must define its name along with selecting its geographic location and establishing streaming units. Connection of the job occurred after selecting its name and designating the use of Azure Blob Storage account as the target.  
+
+The system required configuration of input and output connectors for its operation. The JSON data format was specified when connecting the input to Azure IoT Hub. The output connected to a particular container inside the Azure Blob Storage account used a JSON array format for its output.  
+
+The following images show the visual display of both the input and output connectors that were created.  
+
 ## Findings
 The Stream Analytics job showed successful results from receiving and processing simulated sensor data based on data transmitted through Azure IoT Hub according to overview metrics.  
 
